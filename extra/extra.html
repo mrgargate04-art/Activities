@@ -1,3 +1,4 @@
+xml
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,45 +7,70 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
     <title>extra</title>
 </head>
-<body>
-    <style>body{
-        background-color: orange;
-    }
-        </style>
-    <div class="spinner-border text-primary" role="status">
-  <span class="visually-hidden">Loading...</span>
-</div>
-<img src="download2.png" class="img-thumbnail" alt="...">
-   <div class="d-grid gap-2">
-  <button class="btn btn-success" type="button">open app</button>
-  <button class="btn btn-danger" type="button">close app</button>
-</div> 
-<div class="card" style="width: 18rem;">
-  <img src="download3.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">⭐CODINGAL RATINGS⭐</h5>
-    <p class="card-text">👉THIS LEARNING WEBSITE HAS BEEN RATED 5 OUT OF 5 STARS. MOSTLY CUSTOMERS SAY THAT THERE ARE WONDERFUL TEACHERS AND GREAT EXPLANATIONS 👈.</p>
-    <h1> PROOF:-</h1>
-  </div>
-  <img src="..." class="rounded" alt="...">
-<img src="..." class="rounded-top" alt="...">
-<img src="..." class="rounded-end" alt="...">
-<img src="..." class="rounded-bottom" alt="...">
-<img src="..." class="rounded-start" alt="...">
-<img src="..." class="rounded-circle" alt="...">
-<img src="..." class="rounded-pill" alt="...">
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item"><highlight>SEEMA:</highlight>My younger sister now teaches ME coding!!! CODINGAL is wonderful!</li>
-    <li class="list-group-item"><highlight>ASHUTOSH SINHA:</highlight>My son made an application and cleared my doubts. I was stunned. Codingal is absolutely amazing!!!</li>
-    <li class="list-group-item"><highlight>ANA:</highlight>My daughter started coding like crazy, she also made some websites. Thanks Codingal!!!</li>
-  </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
-</div>
-<button type="button" class="btn btn-warning btn-sm">RATE APP</button>
-<button type="button" class="btn btn-danger btn-sm">DELETE</button>
-
+<body style="background-color: orange;">
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-center flex-nowrap">
+            <!-- Spinner -->
+            <div class="col-auto text-center">
+                <div class="spinner-border text-primary mx-auto mb-0" role="status" style="width: 3rem; height: 3rem;">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            
+            <!-- Image 1 -->
+            <div class="col-auto">
+                <img src="download2.png" class="img-thumbnail" alt="..." style="max-height: 100px;">
+            </div>
+            
+            <!-- Buttons -->
+            <div class="col-auto">
+                <div class="d-flex flex-column gap-2">
+                    <button class="btn btn-success btn-sm">open app</button>
+                    <button class="btn btn-danger btn-sm">close app</button>
+                </div>
+            </div>
+            
+            <!-- Card -->
+            <div class="col-auto">
+                <div class="card me-3" style="width: 20rem;">
+                    <img src="download3.png" class="card-img-top" alt="..." style="height: 150px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">⭐CODINGAL RATINGS⭐</h5>
+                        <p class="card-text mb-2">👉THIS LEARNING WEBSITE HAS BEEN RATED 5 OUT OF 5 STARS. MOSTLY CUSTOMERS SAY THAT THERE ARE WONDERFUL TEACHERS AND GREAT EXPLANATIONS 👈.</p>
+                        <h6 class="card-subtitle mb-2 text-muted">PROOF:-</h6>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex align-items-center">
+                                <strong>SEEMA:</strong> My younger sister now teaches ME coding!!! CODINGAL is wonderful!
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <strong>ASHUTOSH SINHA:</strong> My son made an application and cleared my doubts. I was stunned. Codingal is absolutely amazing!!!
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <strong>ANA:</strong> My daughter started coding like crazy, she also made some websites. Thanks Codingal!!!
+                            </li>
+                        </ul>
+                        <div class="card-imgs mt-2">
+                            <div class="row g-1">
+                                <div class="col-3"><img src="1.jfif" class="img-fluid rounded" alt="..." style="height: 60px; object-fit: cover;"></div>
+                                <div class="col-3"><img src="2.png" class="img-fluid rounded" alt="..." style="height: 60px; object-fit: cover;"></div>
+                                <div class="col-3"><img src="3.jfif" class="img-fluid rounded" alt="..." style="height: 60px; object-fit: cover;"></div>
+                                <div class="col-3"><img src="4.png" class="img-fluid rounded" alt="..." style="height: 60px; object-fit: cover;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Images inside card were moved inside card-body for better structure [web:3] -->
+            
+            <!-- Final buttons -->
+            <div class="col-auto">
+                <div class="d-flex flex-column gap-2">
+                    <button type="button" class="btn btn-warning btn-sm">RATE APP</button>
+                    <button type="button" class="btn btn-danger btn-sm">DELETE</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
