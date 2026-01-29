@@ -1,0 +1,63 @@
+xml
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🇮🇳 Republic Day</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body{background:url('i.jfif') center/cover;min-height:100vh;}
+.content{max-width:600px;margin:50px auto;background:rgba(255,255,255,0.95);border-radius:20px;padding:30px;box-shadow:0 10px 30px rgba(0,0,0,0.3);}
+.btn-india{background:linear-gradient(45deg,#ff9933,#ff6b35,#f7931e);border:none;color:white;font-weight:bold;}
+.badge-india{background:#138808;color:white;font-size:1.2rem;}
+.hidden{display:none;}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+<div class="content text-center">
+<h1 class="display-4 mb-4 text-dark">🇮🇳 Republic Day</h1>
+<p class="lead mb-4">Click to explore India's Pride!</p>
+
+<div class="mb-4">
+<button class="btn btn-india btn-lg me-3" onclick="show('history')">📜 History</button>
+<button class="btn btn-india btn-lg me-3" onclick="show('flag')">🏳️ Flag</button>
+<button class="btn btn-india btn-lg" onclick="show('pm')">👨‍💼 PM Speech</button>
+</div>
+
+<div id="history" class="card border-0 shadow-sm hidden">
+<img src="https://images.unsplash.com/photo-1542614503-83c2d0a430cf?w=500" class="card-img-top rounded" alt="India">
+<div class="card-body">
+<h3><span class="badge badge-india">26 Jan</span> 1950</h3>
+<p>India's Constitution came into effect. Dr. Rajendra Prasad became first President.</p>
+</div>
+</div>
+
+<div id="flag" class="card border-0 shadow-sm hidden">
+<img src="https://images.unsplash.com/photo-1677554606636-0bf92a9d49a4?w=500" class="card-img-top rounded" alt="Flag">
+<div class="card-body">
+<h3><span class="badge badge-india">Tricolor</span></h3>
+<p>Saffron=courage, White=truth, Green=faith. Ashoka Chakra=law.</p>
+</div>
+</div>
+
+<div id="pm" class="card border-0 shadow-sm hidden">
+<img src="https://images.unsplash.com/photo-1593410788884-b9e430342539?w=500" class="card-img-top rounded" alt="PM">
+<div class="card-body">
+<h3><span class="badge badge-india">PM Speech</span></h3>
+<p>From Red Fort, PM addresses nation. Parade showcases military might.</p>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+function show(id){
+document.querySelectorAll('.card').forEach(c=>c.classList.add('hidden'));
+document.getElementById(id).classList.remove('hidden');
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
