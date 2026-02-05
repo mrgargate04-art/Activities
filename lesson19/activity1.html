@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> Javascript objects and its properties</h1>  
+ <p style="font-style: italic;"> There are two diferent way to access an objects property </p> 
+ <p> You can use .property or ["property"].</p>
+ <p id="demo"></p>
+ <script>
+    // create an object:
+    var person={
+        firstName: "I",
+        age: 20,
+    };
+    // Display some data from the object:
+    document.getElementById("demo").innerHTML= person.firstName + "am" + person.age + "years old";
+ </script>
+</body>
+</html>
