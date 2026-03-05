@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+<style>
+    body{
+        background-color: aquamarine;
+    }
+</style>
+<body> 
+    <h2 style="font-family: fantasy; color: darkcyan; ">javascript error handling</h2>
+    <p style="font-family: fantasy; color: darkcyan; "> this is an example of javascript error handling</p>
+<p id="error_message"></p>
+<script>
+    try{
+        addalert("welcome guest!");
+    }
+    catch(err){
+        document.getElementById("error_message").innerHTML=err.message;
+    }
+</script>
+</body>
+</html>
