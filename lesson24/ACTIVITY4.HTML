@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: paleturquoise;
+    }
+</style>
+<body>
+    <h2 style="color:darkcyan ; font-family: cursive; font-size: 50px;"> ✨javascript try catch example✨</h2>
+    <button onclick="checkerror()">click me now</button>
+    <p id="result"></p>
+
+    <script>
+        function checkError(){
+            try{
+                var x= 10;
+                var y= 0;
+                if( y == 0 )  {
+                    throw "Cannot divide by zero!";
+                }
+                var result = x / y;
+                document.getElementById("result").innerHTML= result;
+
+            }
+            catch(error){
+                document.getElementById("result").innerHTML="Error:" + error;
+            }
+            finally{
+                console.log("Execution completed.");
+            }
+        }
+    </script>
+    <h2 style="color:darkcyan ; font-family: cursive; font-size: 50px;"> !!!THANK YOU!!!</h2>
+</body>
+</html>
