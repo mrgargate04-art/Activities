@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H2 style="color: darkgreen;"> JAVASCRIPT 📞CALL📞 BACKS</H2>
+    <P style="font-family: cursive; color: green;">DO A CALCULATION</P>
+    <P ID="RESULT456"></P>
+    <script>
+        function myDisplayer(value) {
+            document.getElementById("RESULT456").innerHTML=value;
+        }
+        function myCalculator(num1,num2, myCallback){
+            let sum= num1+num2;
+            myCallback(sum);
+        }
+        myCalculator(5,5, myDisplayer);
+    </script>
+</body>
+</html>
