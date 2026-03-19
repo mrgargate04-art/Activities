@@ -1,0 +1,26 @@
+body{
+    background: -o-linear-gradient(135deg, #798de4 50%, rgb(255, 177, 238)50% );
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: 45;
+}
+.about{
+    background-color: rgba(0,0,0,0.6);
+    border-radius:15px;
+    margin-top:50px;
+}
+.m-heading{
+    font-size: 2.5rem;
+    font-weight:700;
+    margin:20px 0;
+}
+.btn-outline-warning{
+    border-width:2px;
+    font-weight:600;
+    padding:10px 30px;
+    transition: all 0.3s ease;
+}
+.btn-outline-warning:hover{
+    backgroung-color:#d1892b;
+    transform: scale(1.05);
+}
